@@ -22,6 +22,14 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 /**
  * @Program: study-mockmvc
  * @Description: 测试MockController，学习使用MockMVC模拟测试
+ *
+ * 在此之前思考一个问题:@SpringBootTest 和 @WebMvcTest注解的区别？
+ *
+ * WebMvcTest：用于单元测试场景，需要指定待测试的Controller；他也会启动一个Spring容器，但只会加载其中部分MVC相关的内容，
+ * 不会加载的bean：Component、Service或者Repository等注解的Bean。
+ * 会加载的bean：Controller/ControllerAdvice/JsonComponent/Converter/Filter/WebMvcConfigurer/HandlerMethodArgumentResolver等。
+ *
+ * SpringBootTest：用于集成测试场景，不需要指定待测试的Controller；它会启动一个完整的Spring容器，所有的Bean都会进行加载与初始化。
  * @Author: Sun
  * @Create: 2019-04-22 11:35
  * @Version: 1.0
