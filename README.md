@@ -1,2 +1,2 @@
-# study-mockmvc
-SpringBoot项目使用MockMVC进行控制器层测试
+# study-messy
+学习之路-这个工程里面什么都有，大杂烩
